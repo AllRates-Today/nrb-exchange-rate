@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'NPR', { apiKey: 'art_live_...' });
 {
   bank: 'nrb',
   name: 'Nepal Rastra Bank',
-  rate_date: '2026-08-15',   // Nepal Rastra Bank's own publication date
+  rate_date: '2026-09-09',   // Nepal Rastra Bank's own publication date
   source: 'USD',
   target: 'NPR',
-  rate: 152.99,
+  rate: 152.02,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -98,10 +98,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nrb',
   name: 'Nepal Rastra Bank',
-  rate_date: '2026-08-15',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "NPR", "type": "sell", "value": 152.99 },
-    { "base": "USD", "quote": "NPR", "type": "buy", "value": 152.39 },
+    { "base": "USD", "quote": "NPR", "type": "sell", "value": 152.02 },
+    { "base": "USD", "quote": "NPR", "type": "buy", "value": 151.42 },
     // … the rest of the published table (22 currencies vs NPR)
   ],
   disclaimer: '…'
@@ -141,7 +141,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'nrb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NPR', from: '2026-01-01', to: '2026-08-15' },
+  { source: 'USD', target: 'NPR', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -154,11 +154,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NPR',
   from: '2026-01-01',
-  to: '2026-08-15',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-15', rate: 152.99, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 152.02, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -236,6 +236,14 @@ getRate('USD', 'NPR', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1998 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/nrb.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/nrb/latest.json`
 
 ## 🔗 Links
 
