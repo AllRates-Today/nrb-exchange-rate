@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'NPR', { apiKey: 'art_live_...' });
 {
   bank: 'nrb',
   name: 'Nepal Rastra Bank',
-  rate_date: '2026-09-25',   // Nepal Rastra Bank's own publication date
+  rate_date: '2026-10-06',   // Nepal Rastra Bank's own publication date
   source: 'USD',
   target: 'NPR',
-  rate: 153.84,
+  rate: 154.38,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nrb',
   name: 'Nepal Rastra Bank',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "NPR", "type": "sell", "value": 153.84 },
-    { "base": "USD", "quote": "NPR", "type": "buy", "value": 153.24 },
+    { "base": "USD", "quote": "NPR", "type": "sell", "value": 154.38 },
+    { "base": "USD", "quote": "NPR", "type": "buy", "value": 153.78 },
     // … the rest of the published table (22 currencies vs NPR)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'nrb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NPR', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'NPR', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NPR',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 153.84, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 154.38, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
