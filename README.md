@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/nrb-exchange-rate.svg)](https://github.com/AllRates-Today/nrb-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/nrb-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/NPR today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnrb%3Fsource%3DUSD%26target%3DNPR&query=%24.rate&label=USD%2FNPR%20published%20by%20Nepal%20Rastra%20Bank&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nrb/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnrb%3Fsource%3DUSD%26target%3DNPR&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nrb/)
 
 **Official Nepal Rastra Bank (Nepal) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Nepal Rastra Bank itself prints, every business day.**
 
@@ -32,6 +34,63 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Nepal Rastra Bank table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Nepal Rastra Bank — 44 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | NPR | buy | 42.08 |
+| AED | NPR | sell | 42.25 |
+| AUD | NPR | buy | 107.44 |
+| AUD | NPR | sell | 107.86 |
+| BHD | NPR | buy | 409.81 |
+| BHD | NPR | sell | 411.4 |
+| CAD | NPR | buy | 108.36 |
+| CAD | NPR | sell | 108.78 |
+| CHF | NPR | buy | 185.28 |
+| CHF | NPR | sell | 186 |
+| CNY | NPR | buy | 23.06 |
+| CNY | NPR | sell | 23.15 |
+| DKK | NPR | buy | 23.12 |
+| DKK | NPR | sell | 23.21 |
+| EUR | NPR | buy | 172.83 |
+| EUR | NPR | sell | 173.5 |
+| GBP | NPR | buy | 203.87 |
+| GBP | NPR | sell | 204.66 |
+| HKD | NPR | buy | 19.7 |
+| HKD | NPR | sell | 19.77 |
+| INR | NPR | buy | 1.6 |
+| INR | NPR | sell | 1.6015 |
+| JPY | NPR | buy | 0.977 |
+| JPY | NPR | sell | 0.98 |
+| KRW | NPR | buy | 0.115 |
+| KRW | NPR | sell | 0.1154 |
+| KWD | NPR | buy | 501.57 |
+| KWD | NPR | sell | 503.52 |
+| MYR | NPR | buy | 37.78 |
+| MYR | NPR | sell | 37.92 |
+| OMR | NPR | buy | 401.46 |
+| OMR | NPR | sell | 403.02 |
+| QAR | NPR | buy | 42.4 |
+| QAR | NPR | sell | 42.57 |
+| SAR | NPR | buy | 41.17 |
+| SAR | NPR | sell | 41.33 |
+| SEK | NPR | buy | 15.43 |
+| SEK | NPR | sell | 15.49 |
+| SGD | NPR | buy | 120.55 |
+| SGD | NPR | sell | 121.02 |
+| THB | NPR | buy | 4.59 |
+| THB | NPR | sell | 4.61 |
+| USD | NPR | buy | 154.56 |
+| USD | NPR | sell | 155.16 |
+
+Source: [Official rates published by NRB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nrb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
