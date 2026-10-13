@@ -42,54 +42,54 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Nepal Rastra Bank — 44 rates. Updated 2026-10-12.
+Published **2026-10-13** by Nepal Rastra Bank — 44 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NPR | buy | 42.06 |
-| AED | NPR | sell | 42.22 |
-| AUD | NPR | buy | 107.9 |
-| AUD | NPR | sell | 108.32 |
-| BHD | NPR | buy | 409.06 |
-| BHD | NPR | sell | 410.64 |
-| CAD | NPR | buy | 108.35 |
-| CAD | NPR | sell | 108.77 |
-| CHF | NPR | buy | 186.06 |
-| CHF | NPR | sell | 186.79 |
-| CNY | NPR | buy | 23.08 |
-| CNY | NPR | sell | 23.17 |
-| DKK | NPR | buy | 23.15 |
-| DKK | NPR | sell | 23.24 |
-| EUR | NPR | buy | 173.05 |
-| EUR | NPR | sell | 173.72 |
-| GBP | NPR | buy | 204.42 |
-| GBP | NPR | sell | 205.21 |
-| HKD | NPR | buy | 19.68 |
-| HKD | NPR | sell | 19.76 |
+| AED | NPR | buy | 41.64 |
+| AED | NPR | sell | 41.8 |
+| AUD | NPR | buy | 106.61 |
+| AUD | NPR | sell | 107.03 |
+| BHD | NPR | buy | 404.82 |
+| BHD | NPR | sell | 406.41 |
+| CAD | NPR | buy | 107.22 |
+| CAD | NPR | sell | 107.65 |
+| CHF | NPR | buy | 183.59 |
+| CHF | NPR | sell | 184.31 |
+| CNY | NPR | buy | 22.85 |
+| CNY | NPR | sell | 22.94 |
+| DKK | NPR | buy | 22.88 |
+| DKK | NPR | sell | 22.97 |
+| EUR | NPR | buy | 171.03 |
+| EUR | NPR | sell | 171.7 |
+| GBP | NPR | buy | 202.42 |
+| GBP | NPR | sell | 203.22 |
+| HKD | NPR | buy | 19.49 |
+| HKD | NPR | sell | 19.57 |
 | INR | NPR | buy | 1.6 |
 | INR | NPR | sell | 1.6015 |
-| JPY | NPR | buy | 0.976 |
-| JPY | NPR | sell | 0.979 |
-| KRW | NPR | buy | 0.1152 |
-| KRW | NPR | sell | 0.1157 |
-| KWD | NPR | buy | 501.31 |
-| KWD | NPR | sell | 503.26 |
-| MYR | NPR | buy | 37.82 |
-| MYR | NPR | sell | 37.96 |
-| OMR | NPR | buy | 401.24 |
-| OMR | NPR | sell | 402.8 |
-| QAR | NPR | buy | 42.42 |
-| QAR | NPR | sell | 42.58 |
-| SAR | NPR | buy | 41.12 |
-| SAR | NPR | sell | 41.28 |
-| SEK | NPR | buy | 15.45 |
-| SEK | NPR | sell | 15.51 |
-| SGD | NPR | buy | 120.62 |
-| SGD | NPR | sell | 121.09 |
-| THB | NPR | buy | 4.61 |
-| THB | NPR | sell | 4.63 |
-| USD | NPR | buy | 154.48 |
-| USD | NPR | sell | 155.08 |
+| JPY | NPR | buy | 0.964 |
+| JPY | NPR | sell | 0.968 |
+| KRW | NPR | buy | 0.1148 |
+| KRW | NPR | sell | 0.1152 |
+| KWD | NPR | buy | 496.32 |
+| KWD | NPR | sell | 498.26 |
+| MYR | NPR | buy | 37.38 |
+| MYR | NPR | sell | 37.53 |
+| OMR | NPR | buy | 397.22 |
+| OMR | NPR | sell | 398.78 |
+| QAR | NPR | buy | 41.96 |
+| QAR | NPR | sell | 42.12 |
+| SAR | NPR | buy | 40.72 |
+| SAR | NPR | sell | 40.88 |
+| SEK | NPR | buy | 15.26 |
+| SEK | NPR | sell | 15.32 |
+| SGD | NPR | buy | 119.41 |
+| SGD | NPR | sell | 119.88 |
+| THB | NPR | buy | 4.55 |
+| THB | NPR | sell | 4.57 |
+| USD | NPR | buy | 152.94 |
+| USD | NPR | sell | 153.54 |
 
 Source: [Official rates published by NRB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nrb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
