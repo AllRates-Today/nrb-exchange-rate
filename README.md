@@ -33,63 +33,66 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/nrb').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Nepal Rastra Bank table](https://allratestoday.com/api/open/central-bank/nrb/table.svg)](https://allratestoday.com/central-bank-rates-api/nrb/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Nepal Rastra Bank — 44 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Nepal Rastra Bank — 44 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NPR | buy | 41.33 |
-| AED | NPR | sell | 41.49 |
-| AUD | NPR | buy | 104.96 |
-| AUD | NPR | sell | 105.38 |
-| BHD | NPR | buy | 401.96 |
-| BHD | NPR | sell | 403.55 |
-| CAD | NPR | buy | 106.88 |
-| CAD | NPR | sell | 107.3 |
-| CHF | NPR | buy | 182.99 |
-| CHF | NPR | sell | 183.71 |
-| CNY | NPR | buy | 22.69 |
-| CNY | NPR | sell | 22.78 |
-| DKK | NPR | buy | 22.78 |
-| DKK | NPR | sell | 22.87 |
-| EUR | NPR | buy | 170.27 |
-| EUR | NPR | sell | 170.95 |
-| GBP | NPR | buy | 201.3 |
-| GBP | NPR | sell | 202.1 |
-| HKD | NPR | buy | 19.34 |
-| HKD | NPR | sell | 19.42 |
+| AED | NPR | buy | 41.29 |
+| AED | NPR | sell | 41.45 |
+| AUD | NPR | buy | 105.34 |
+| AUD | NPR | sell | 105.76 |
+| BHD | NPR | buy | 401.64 |
+| BHD | NPR | sell | 403.23 |
+| CAD | NPR | buy | 107.25 |
+| CAD | NPR | sell | 107.67 |
+| CHF | NPR | buy | 184.04 |
+| CHF | NPR | sell | 184.77 |
+| CNY | NPR | buy | 22.68 |
+| CNY | NPR | sell | 22.77 |
+| DKK | NPR | buy | 22.8 |
+| DKK | NPR | sell | 22.89 |
+| EUR | NPR | buy | 170.44 |
+| EUR | NPR | sell | 171.11 |
+| GBP | NPR | buy | 202.12 |
+| GBP | NPR | sell | 202.92 |
+| HKD | NPR | buy | 19.32 |
+| HKD | NPR | sell | 19.4 |
 | INR | NPR | buy | 1.6 |
 | INR | NPR | sell | 1.6015 |
-| JPY | NPR | buy | 0.963 |
-| JPY | NPR | sell | 0.966 |
-| KRW | NPR | buy | 0.1129 |
-| KRW | NPR | sell | 0.1133 |
-| KWD | NPR | buy | 492.62 |
-| KWD | NPR | sell | 494.56 |
-| MYR | NPR | buy | 37.18 |
-| MYR | NPR | sell | 37.33 |
-| OMR | NPR | buy | 394.28 |
-| OMR | NPR | sell | 395.84 |
-| QAR | NPR | buy | 41.64 |
-| QAR | NPR | sell | 41.81 |
-| SAR | NPR | buy | 40.45 |
-| SAR | NPR | sell | 40.61 |
-| SEK | NPR | buy | 15.22 |
-| SEK | NPR | sell | 15.28 |
-| SGD | NPR | buy | 118.39 |
-| SGD | NPR | sell | 118.85 |
+| JPY | NPR | buy | 0.96 |
+| JPY | NPR | sell | 0.963 |
+| KRW | NPR | buy | 0.1136 |
+| KRW | NPR | sell | 0.1141 |
+| KWD | NPR | buy | 492.1 |
+| KWD | NPR | sell | 494.05 |
+| MYR | NPR | buy | 37.15 |
+| MYR | NPR | sell | 37.3 |
+| OMR | NPR | buy | 393.87 |
+| OMR | NPR | sell | 395.42 |
+| QAR | NPR | buy | 41.62 |
+| QAR | NPR | sell | 41.78 |
+| SAR | NPR | buy | 40.41 |
+| SAR | NPR | sell | 40.57 |
+| SEK | NPR | buy | 15.3 |
+| SEK | NPR | sell | 15.36 |
+| SGD | NPR | buy | 118.5 |
+| SGD | NPR | sell | 118.97 |
 | THB | NPR | buy | 4.53 |
 | THB | NPR | sell | 4.55 |
-| USD | NPR | buy | 151.8 |
-| USD | NPR | sell | 152.4 |
+| USD | NPR | buy | 151.64 |
+| USD | NPR | sell | 152.24 |
+
+</details>
 
 Source: [Official rates published by NRB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nrb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -363,7 +366,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/nrb-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/nrb-exchange-rate)
 
 ## 📜 License
