@@ -47,54 +47,54 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Nepal Rastra Bank — 44 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Nepal Rastra Bank — 44 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NPR | buy | 41.36 |
-| AED | NPR | sell | 41.52 |
-| AUD | NPR | buy | 106.71 |
-| AUD | NPR | sell | 107.13 |
-| BHD | NPR | buy | 402.62 |
-| BHD | NPR | sell | 404.21 |
-| CAD | NPR | buy | 108.35 |
-| CAD | NPR | sell | 108.77 |
-| CHF | NPR | buy | 183.34 |
-| CHF | NPR | sell | 184.07 |
-| CNY | NPR | buy | 22.78 |
-| CNY | NPR | sell | 22.87 |
-| DKK | NPR | buy | 22.64 |
-| DKK | NPR | sell | 22.73 |
-| EUR | NPR | buy | 169.21 |
-| EUR | NPR | sell | 169.88 |
-| GBP | NPR | buy | 202.24 |
-| GBP | NPR | sell | 203.04 |
-| HKD | NPR | buy | 19.36 |
-| HKD | NPR | sell | 19.44 |
+| AED | NPR | buy | 41.4 |
+| AED | NPR | sell | 41.56 |
+| AUD | NPR | buy | 106.87 |
+| AUD | NPR | sell | 107.29 |
+| BHD | NPR | buy | 402.97 |
+| BHD | NPR | sell | 404.56 |
+| CAD | NPR | buy | 108.15 |
+| CAD | NPR | sell | 108.58 |
+| CHF | NPR | buy | 183.12 |
+| CHF | NPR | sell | 183.84 |
+| CNY | NPR | buy | 22.81 |
+| CNY | NPR | sell | 22.9 |
+| DKK | NPR | buy | 22.63 |
+| DKK | NPR | sell | 22.72 |
+| EUR | NPR | buy | 169.17 |
+| EUR | NPR | sell | 169.83 |
+| GBP | NPR | buy | 202 |
+| GBP | NPR | sell | 202.79 |
+| HKD | NPR | buy | 19.38 |
+| HKD | NPR | sell | 19.46 |
 | INR | NPR | buy | 1.6 |
 | INR | NPR | sell | 1.6015 |
 | JPY | NPR | buy | 0.963 |
 | JPY | NPR | sell | 0.967 |
-| KRW | NPR | buy | 0.1144 |
-| KRW | NPR | sell | 0.1149 |
-| KWD | NPR | buy | 492.91 |
-| KWD | NPR | sell | 494.86 |
-| MYR | NPR | buy | 37.15 |
-| MYR | NPR | sell | 37.29 |
-| OMR | NPR | buy | 394.5 |
-| OMR | NPR | sell | 396.06 |
-| QAR | NPR | buy | 41.67 |
-| QAR | NPR | sell | 41.84 |
-| SAR | NPR | buy | 40.47 |
-| SAR | NPR | sell | 40.63 |
-| SEK | NPR | buy | 15.25 |
-| SEK | NPR | sell | 15.31 |
-| SGD | NPR | buy | 118.5 |
-| SGD | NPR | sell | 118.97 |
-| THB | NPR | buy | 4.5 |
+| KRW | NPR | buy | 0.1135 |
+| KRW | NPR | sell | 0.114 |
+| KWD | NPR | buy | 493.14 |
+| KWD | NPR | sell | 495.09 |
+| MYR | NPR | buy | 37.3 |
+| MYR | NPR | sell | 37.44 |
+| OMR | NPR | buy | 394.95 |
+| OMR | NPR | sell | 396.5 |
+| QAR | NPR | buy | 41.72 |
+| QAR | NPR | sell | 41.88 |
+| SAR | NPR | buy | 40.52 |
+| SAR | NPR | sell | 40.68 |
+| SEK | NPR | buy | 15.29 |
+| SEK | NPR | sell | 15.35 |
+| SGD | NPR | buy | 118.58 |
+| SGD | NPR | sell | 119.05 |
+| THB | NPR | buy | 4.51 |
 | THB | NPR | sell | 4.52 |
-| USD | NPR | buy | 151.89 |
-| USD | NPR | sell | 152.49 |
+| USD | NPR | buy | 152.06 |
+| USD | NPR | sell | 152.66 |
 
 </details>
 
@@ -260,6 +260,7 @@ Nepal Rastra Bank is Nepal's central bank and publishes the official buying and 
 
 - Publisher's own page: [Foreign exchange rates](https://www.nrb.org.np/forex/) · [www.nrb.org.np](https://www.nrb.org.np)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Nepal Rastra Bank rates page](https://allratestoday.com/central-bank-rates-api/nrb/)
+- In the API: usually by **06:15 UTC** (measured over the last 15 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
