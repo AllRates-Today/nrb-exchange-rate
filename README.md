@@ -32,54 +32,54 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-16 by Nepal Rastra Bank — 44 rates. Updated 2026-11-16.</summary>
+<summary>Table as text: published 2026-11-17 by Nepal Rastra Bank — 44 rates. Updated 2026-11-17.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NPR | buy | 40.97 |
-| AED | NPR | sell | 41.14 |
-| AUD | NPR | buy | 101.91 |
-| AUD | NPR | sell | 102.32 |
-| BHD | NPR | buy | 399.07 |
-| BHD | NPR | sell | 400.66 |
-| CAD | NPR | buy | 105.46 |
-| CAD | NPR | sell | 105.88 |
-| CHF | NPR | buy | 179.38 |
-| CHF | NPR | sell | 180.09 |
-| CNY | NPR | buy | 22.56 |
-| CNY | NPR | sell | 22.65 |
-| DKK | NPR | buy | 22.19 |
-| DKK | NPR | sell | 22.28 |
-| EUR | NPR | buy | 165.88 |
-| EUR | NPR | sell | 166.54 |
-| GBP | NPR | buy | 198.9 |
-| GBP | NPR | sell | 199.69 |
-| HKD | NPR | buy | 19.18 |
-| HKD | NPR | sell | 19.26 |
+| AED | NPR | buy | 40.84 |
+| AED | NPR | sell | 41 |
+| AUD | NPR | buy | 101.27 |
+| AUD | NPR | sell | 101.68 |
+| BHD | NPR | buy | 397.61 |
+| BHD | NPR | sell | 399.2 |
+| CAD | NPR | buy | 104.99 |
+| CAD | NPR | sell | 105.41 |
+| CHF | NPR | buy | 178.47 |
+| CHF | NPR | sell | 179.19 |
+| CNY | NPR | buy | 22.5 |
+| CNY | NPR | sell | 22.59 |
+| DKK | NPR | buy | 22.09 |
+| DKK | NPR | sell | 22.17 |
+| EUR | NPR | buy | 165.11 |
+| EUR | NPR | sell | 165.77 |
+| GBP | NPR | buy | 197.78 |
+| GBP | NPR | sell | 198.57 |
+| HKD | NPR | buy | 19.12 |
+| HKD | NPR | sell | 19.19 |
 | INR | NPR | buy | 1.6 |
 | INR | NPR | sell | 1.6015 |
-| JPY | NPR | buy | 0.942 |
-| JPY | NPR | sell | 0.946 |
-| KRW | NPR | buy | 0.1127 |
-| KRW | NPR | sell | 0.1131 |
-| KWD | NPR | buy | 487.65 |
-| KWD | NPR | sell | 489.6 |
-| MYR | NPR | buy | 36.82 |
-| MYR | NPR | sell | 36.96 |
-| OMR | NPR | buy | 390.87 |
-| OMR | NPR | sell | 392.43 |
-| QAR | NPR | buy | 41.3 |
-| QAR | NPR | sell | 41.47 |
-| SAR | NPR | buy | 40.1 |
-| SAR | NPR | sell | 40.26 |
-| SEK | NPR | buy | 14.94 |
-| SEK | NPR | sell | 15 |
-| SGD | NPR | buy | 116.85 |
-| SGD | NPR | sell | 117.32 |
-| THB | NPR | buy | 4.44 |
-| THB | NPR | sell | 4.46 |
-| USD | NPR | buy | 150.49 |
-| USD | NPR | sell | 151.09 |
+| JPY | NPR | buy | 0.94 |
+| JPY | NPR | sell | 0.944 |
+| KRW | NPR | buy | 0.1124 |
+| KRW | NPR | sell | 0.1128 |
+| KWD | NPR | buy | 485.69 |
+| KWD | NPR | sell | 487.63 |
+| MYR | NPR | buy | 36.63 |
+| MYR | NPR | sell | 36.77 |
+| OMR | NPR | buy | 389.54 |
+| OMR | NPR | sell | 391.1 |
+| QAR | NPR | buy | 41.15 |
+| QAR | NPR | sell | 41.31 |
+| SAR | NPR | buy | 39.96 |
+| SAR | NPR | sell | 40.12 |
+| SEK | NPR | buy | 14.88 |
+| SEK | NPR | sell | 14.94 |
+| SGD | NPR | buy | 116.34 |
+| SGD | NPR | sell | 116.81 |
+| THB | NPR | buy | 4.42 |
+| THB | NPR | sell | 4.44 |
+| USD | NPR | buy | 149.98 |
+| USD | NPR | sell | 150.58 |
 
 </details>
 
